@@ -1,0 +1,158 @@
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 244, 244);
+    color: rgb(19, 19, 19);
+}
+.container{
+    display: flex;
+    flex-direction: column; /* Pour empiler les éléments verticalement */
+    margin: 0 auto;
+}
+.head,.description{
+    margin: 2% 15%;
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Pour espacer les éléments sur la ligne */
+    align-items: center; /*Pour aligner les éléments verticalement*/
+}
+.description{
+    display: inline-flex;
+}
+.nav{
+    font-weight: 400;
+    float: inline-end;
+}
+.nav a{
+    text-decoration: none;
+    outline: none;
+    display: inline;
+    font-size: 18px;
+    margin:10px 20px;
+    color: rgb(19, 19, 19);
+}
+.nav .active {
+    color: rgb(209, 6, 101);
+    font-weight: 600;
+}
+.nav a:hover{
+    color: rgb(209, 6, 101);
+    font-weight: 500;
+}
+
+.logo{
+    font-size: 48px;
+    font-weight: 600;
+    float: left;
+    margin: 0;
+}
+
+.text {
+    font-size: 28px;
+}
+
+.part1{
+    font-size: 40px;
+}
+.part2{
+    color: rgb(209, 6, 101);
+    font-size: 40px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajustez le padding selon vos besoins */
+    border: 2px solid rgb(209, 6, 101);
+    ; /* Ajoute une bordure de 2 pixels solide noire */
+    text-decoration: none; /* Supprime le soulignement par défaut du lien */
+    color: rgb(247, 244, 244); /* Couleur du texte */
+    background-color:rgb(209, 6, 101); /* Fond transparent */
+    font-weight: bold;
+    border-radius: 5px; /* Arrondi les coins de la bordure */
+    transition: all 0.3s ease; /* Ajoute une transition fluide */
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+a.button:hover {
+    background-color: transparent; /* Changement de couleur de fond au survol */
+    color: rgb(209, 6, 101); /* Changement de couleur de texte au survol */
+}
+.icon_1{
+    display: none;
+}
+.icon{
+    display: flex; /* Utilisation de flexbox */
+    align-items: center; /*Pour aligner les éléments verticalement*/
+}
+.icon-facebook {
+    color:  rgb(79, 3, 46); /* Change la couleur de l'icône Facebook en rose */
+    margin: 20px 15px;
+}
+.image{
+    /* float: left ; */
+    margin: 0;
+    padding: 0;
+}
+.icon-bars{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .container{
+        width: 500px;
+    }
+    .head,.description{
+        margin: 2% 5%;
+        display: flex; /* Utilisation de flexbox */
+        justify-content: space-between; /* Pour espacer les éléments sur la ligne */
+        align-items: center; /*Pour aligner les éléments verticalement*/
+    }
+    a{
+        text-decoration: none;
+        outline: none;
+        display: inline;
+        font-size: 14px;
+        margin:10px 20px;
+        color: rgb(19, 19, 19);
+    }
+    a.button {
+        width: 130px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .part1{
+        font-size: 32px;
+    }
+    .part2{
+        color: rgb(209, 6, 101);
+        font-size: 32px;
+    }
+    .description{
+    display: block;
+    }
+    .image img{
+        width: 90%;
+    }
+    .nav a{
+        text-decoration: none;
+        outline: none;
+        display: none;
+        font-size: 22px;
+        margin:10px 20px;
+        color: rgb(19, 19, 19);
+    }
+    .icon-bars{
+    color:  rgb(79, 3, 46); /* Change la couleur de l'icône Facebook en rose */
+    }
+    .icon_1{
+        display: flex;
+        margin-right: 80px;
+    }
+    .icon-facebook {
+        color:  rgb(79, 3, 46); /* Change la couleur de l'icône Facebook en rose */
+        margin: 20px 0;
+        width: 100%;
+    }
+}
